@@ -5,10 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const pageImageMap = {
         'index.html': 'new/Home Page - New 01.jpg',
-        'about.html': 'new/About Us page.jpg',
+        'about.html': 'new/About Us.jpg',
         'services.html': 'new/Our Services.jpg',
         'projects.html': 'new/Our Projects.jpg',
-        'joint-development.html': 'new/Joint development.jpg',
+        'project-menu.html': 'new/Project Menu.jpg',
+        'ongoing-projects.html': 'new/On-going All Project.jpg',
+        'ongoing-project.html': 'new/Ongoing Project.jpg',
+        'completed-projects.html': 'new/Completed Projects.jpg',
+        'upcoming-projects.html': 'new/Upcoming Projects.jpg',
+        'joint-development.html': 'new/Joint Development.jpg',
         'privilege-club.html': 'new/Privilege Club.jpg',
         'media.html': 'new/Media & News.jpg',
         'blog.html': 'new/Blog.jpg',
@@ -17,7 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Fallback list of available V2 pages (for file:// protocol or CORS errors)
-    const hardcodedV2Pages = ['index.html'];
+    const hardcodedV2Pages = [
+        'index.html',
+        'about.html',
+        'services.html',
+        'projects.html',
+        'project-menu.html',
+        'ongoing-projects.html',
+        'ongoing-project.html',
+        'completed-projects.html',
+        'upcoming-projects.html',
+        'joint-development.html',
+        'privilege-club.html',
+        'media.html',
+        'career.html',
+        'contact.html'
+    ];
 
     function getPageKey(href) {
         if (!href) return '';
@@ -63,7 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (version === 'v2') {
                 return !item.classList.contains('v2-unavailable');
             }
-            return true;
+            return !item.classList.contains('v1-unavailable');
+        });
+
+        // Dynamically update numbers to ensure sequential presentation in both versions
+        visibleNavItems.forEach((item, idx) => {
+            const numEl = item.querySelector('.nav-number');
+            if (numEl) {
+                numEl.textContent = String(idx + 1).padStart(2, '0');
+            }
         });
 
         const prevBtn = Array.from(document.querySelectorAll('.control-btn')).find(el => el.textContent.trim().toLowerCase() === 'prev');

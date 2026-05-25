@@ -318,3 +318,8 @@ main {
 body.v2-active .nav-item.v2-unavailable {
     display: none !important;
 }
+
+/* Sidebar items hidden in v1 */
+body:not(.v2-active) .nav-item.v1-unavailable {
+    display: none !important;
+}
