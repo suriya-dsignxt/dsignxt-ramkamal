@@ -4,39 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const img = document.querySelector('.mockup-image');
 
     const pageImageMap = {
-        'index.html': 'new/Home Page - New 01.jpg',
-        'about.html': 'new/About Us.jpg',
-        'services.html': 'new/Our Services.jpg',
-        'projects.html': 'new/Our Projects.jpg',
-        'project-menu.html': 'new/Project Menu.jpg',
-        'exploreprojects.html': 'new/Exploreprojects.jpg',
-        'ongoing-project.html': 'new/Ongoing Project.jpg',
-        'completed-projects.html': 'new/Completed Projects.jpg',
-        'upcoming-projects.html': 'new/Upcoming Projects.jpg',
-        'joint-development.html': 'new/Joint Development.jpg',
-        'privilege-club.html': 'new/Privilege Club.jpg',
-        'media.html': 'new/Media & News.jpg',
-        'blog.html': 'new/Blog.jpg',
-        'career.html': 'new/Career Page.jpg',
-        'contact.html': 'new/Contact Us.jpg'
+        'ongoing-project.html': 'v2/Ongoing Projects.jpg'
     };
 
     // Fallback list of available V2 pages (for file:// protocol or CORS errors)
     const hardcodedV2Pages = [
-        'index.html',
-        'about.html',
-        'services.html',
-        'projects.html',
-        'project-menu.html',
-        'exploreprojects.html',
-        'ongoing-project.html',
-        'completed-projects.html',
-        'upcoming-projects.html',
-        'joint-development.html',
-        'privilege-club.html',
-        'media.html',
-        'career.html',
-        'contact.html'
+        'ongoing-project.html'
     ];
 
     function getPageKey(href) {
