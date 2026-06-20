@@ -22,7 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         v2: {
             label: 'Version 2',
             pages: [
-                { id: 'ongoing-project', label: 'ONGOING PROJECT', image: 'v2/Ongoing Projects.jpg' }
+                { id: 'home', label: 'HOME PAGE', image: 'v2/Home Page - New 01.jpg' },
+                { id: 'about', label: 'ABOUT US', image: 'v2/About Us.jpg' },
+                { id: 'services', label: 'OUR SERVICES', image: 'v2/Our Services.jpg' },
+                { id: 'projects', label: 'OUR PROJECTS', image: 'v2/Our Projects.jpg' },
+                { id: 'project-menu', label: 'PROJECT MENU', image: 'v2/Project Menu.jpg' },
+                { id: 'explore-project', label: 'EXPLORE PROJECT', image: 'v2/Explore Project.jpg' },
+                { id: 'ongoing-project', label: 'ONGOING PROJECT', image: 'v2/Ongoing Projects.jpg' },
+                { id: 'completed-projects', label: 'COMPLETED PROJECTS', image: 'v2/Completed Projects.jpg' },
+                { id: 'upcoming-projects', label: 'UPCOMING PROJECTS', image: 'v2/Upcoming Projects.jpg' },
+                { id: 'joint-development', label: 'JOINT VENTURE', image: 'v2/Joint Venture.jpg' },
+                { id: 'privilege-club', label: 'PRIVILEGE CLUB', image: 'v2/Privilege Club.jpg' },
+                { id: 'media', label: 'MEDIA & NEWS', image: 'v2/Media & News.jpg' },
+                { id: 'careers', label: 'CAREERS', image: 'v2/Career Page.jpg' },
+                { id: 'contact', label: 'CONTACT US', image: 'v2/Contact Us.jpg' }
             ]
         }
     };
