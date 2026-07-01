@@ -383,3 +383,16 @@ main {
         padding-inline: 24px;
     }
 }
+
+/* Mobile version mockup styling */
+body[data-version="mobile"] .mockup-image {
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: auto;
+}
+
+body[data-version="mobile"] .mockup-container {
+    display: flex;
+    justify-content: center;
+    background: #020202;
+}

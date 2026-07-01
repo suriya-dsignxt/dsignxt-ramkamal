@@ -37,6 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'careers', label: 'CAREERS', image: 'v2/Career Page.jpg' },
                 { id: 'contact', label: 'CONTACT US', image: 'v2/Contact Us.jpg' }
             ]
+        },
+        mobile: {
+            label: 'Mobile View',
+            pages: [
+                { id: 'home', label: 'HOME PAGE', image: 'mobileramkamal/Home Page.jpg' },
+                { id: 'about', label: 'ABOUT US', image: 'mobileramkamal/About Us.jpg' },
+                { id: 'services', label: 'OUR SERVICES', image: 'mobileramkamal/Our Services.jpg' },
+                { id: 'projects', label: 'OUR PROJECTS', image: 'mobileramkamal/Our Projects.jpg' },
+                { id: 'explore-project', label: 'EXPLORE PROJECTS', image: 'mobileramkamal/Explore Projects.jpg' },
+                { id: 'ongoing-project', label: 'ONGOING PROJECTS', image: 'mobileramkamal/On going Projects.jpg' },
+                { id: 'completed-projects', label: 'COMPLETED PROJECTS', image: 'mobileramkamal/Completed Projects.jpg' },
+                { id: 'upcoming-projects', label: 'UPCOMING PROJECTS', image: 'mobileramkamal/Up coming Projects.jpg' },
+                { id: 'joint-development', label: 'JOIN VENTURE', image: 'mobileramkamal/Join Venture.jpg' },
+                { id: 'privilege-club', label: 'PRIVILEGE CLUB', image: 'mobileramkamal/Priilege Club.jpg' },
+                { id: 'media', label: 'MEDIA & NEWS', image: 'mobileramkamal/Media & News.jpg' },
+                { id: 'careers', label: 'CAREERS', image: 'mobileramkamal/Career Page.jpg' },
+                { id: 'contact', label: 'CONTACT US', image: 'mobileramkamal/Contact Us.jpg' },
+                { id: 'menu', label: 'MENU', image: 'mobileramkamal/Menu.jpg' }
+            ]
         }
     };
 
